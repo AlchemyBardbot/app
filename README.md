@@ -20,3 +20,7 @@ Bardbot allows game masters to create an immersive environment within discord ut
 - Take proper breaks, let others know so they can remember to take breaks
 - Be constructive with feedback and opinions. Don't just say "I don't like that", say "I don't like that, and here's my suggestion for how to do it instead"
 - Be open minded to suggestions and openly communicate
+
+
+# Resources
+- Freesound: https://freesound.org/
