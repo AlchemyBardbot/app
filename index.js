@@ -18,4 +18,4 @@ client.on('message', (msg) => {
   }
 });
 
-client.login(process.env.BARDBOT_TOKEN);
+if (message) client.login(process.env.BARDBOT_TOKEN);
