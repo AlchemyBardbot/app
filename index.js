@@ -41,8 +41,6 @@ client.on('message', async (message) => {
   } else {
     message.channel.send('Enter a valid command!');
   }
-
-
 });
 
 async function execute(message) {
@@ -62,7 +60,7 @@ async function execute(message) {
 
   try {
     connection = await voiceChannel.join();
-    play(message.guild, tracks[0]); // this line will change
+    play(tracks[0]); // this line will change
     message.channel.send(`Now playing ${tracks[0].title}`); // this line will change too
   } catch (error) {
     console.log(error);
