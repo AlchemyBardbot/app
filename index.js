@@ -56,12 +56,12 @@ async function execute(message) {
       'I need permission to join and speak in your voice channel!'
     );
   }
-  const tracks = songs; //will need to update with call to DB
 
   try {
     connection = await voiceChannel.join();
-    play(tracks[0]); // this line will change
-    message.channel.send(`Now playing ${tracks[0].title}`); // this line will change too
+    const randomTrack = Math.floor(Math.random() * songs.length);
+    play(songs[randomTrack]); // this line will change
+    message.channel.send(`Now playing ${randomTrack.title}`); // this line will change too
   } catch (error) {
     console.log(error);
     return message.channel.send(error);
