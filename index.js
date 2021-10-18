@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+require('dotenv').config();
 const prefix = process.env.PREFIX;
 const token = process.env.BARDBOT_TOKEN;
 const ytdl = require('ytdl-core');
@@ -40,6 +41,8 @@ client.on('message', async (message) => {
   } else {
     message.channel.send('Enter a valid command!');
   }
+
+
 });
 
 async function execute(message) {
