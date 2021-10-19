@@ -7,7 +7,7 @@ CREATE TABLE genres (
 );
 
 INSERT INTO genres (genre)
-VALUES ('magic town'), ('battle'), ('tavern'), ('town'), ('travel');
+VALUES ('magictown'), ('battle'), ('tavern'), ('town'), ('travel');
 
 CREATE TABLE songs (
     id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -17,7 +17,7 @@ CREATE TABLE songs (
     FOREIGN KEY (genre_id) REFERENCES genres(id)
 );
 
-`
+
 INSERT INTO songs (title, url, genre_id)
 VALUES 
 ('fantasy village', 'https://www.youtube.com/watch?v=K1vUA9NltVw', '1'), 
@@ -35,4 +35,3 @@ VALUES
 ('exciting new adventure', 'https://www.youtube.com/watch?v=x5l4Cc9TCC8', '5'),
 ('plains adventure with fauna sounds', 'https://www.youtube.com/watch?v=s9UdWnO4W4k', '5'),
 ('forest adventure', 'https://www.youtube.com/watch?v=JixpQ5o90Jg', '5');
-`
