@@ -3,6 +3,7 @@ require('dotenv').config();
 const prefix = process.env.PREFIX;
 const token = process.env.BARDBOT_TOKEN;
 const ytdl = require('ytdl-core');
+const router = require('./lib/controllers/router.js');
 
 const songs = [
   {
@@ -32,15 +33,19 @@ client.once('ready', () => {
 
 client.on('message', async (message) => {
   if (message.author.bot) return;
-  if (!message.content.startsWith(prefix)) return;
+  // if (!message.content.startsWith()) return;
+  const messageParts = message.split(' ');
+  const keyword = messageParts[0];
+  const args = messageParts.slice(1);
+  return router(keyword, args, message);
 
-  if (message.content.startsWith(`${prefix}play`)) {
-    execute(message);
-  } else if (message.content.startsWith(`${prefix}stop`)) {
-    stop(message);
-  } else {
-    message.channel.send('Enter a valid command!');
-  }
+  // if (message.content.startsWith(`${prefix}play`)) {
+  //   execute(message);
+  // } else if (message.content.startsWith(`${prefix}stop`)) {
+  //   stop(message);
+  // } else {
+  //   message.channel.send('Enter a valid command!');
+  // }
 });
 
 async function execute(message) {
