@@ -8,6 +8,10 @@ describe('bardbot routes', () => {
     return setup(pool);
   });
 
+  it('Check to see if the message has play and by genre ', async() => {
+    const res = await 
+  });
+
   afterAll(() => {
     pool.end();
   });
