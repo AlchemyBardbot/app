@@ -4,6 +4,7 @@ const token = process.env.BARDBOT_TOKEN;
 const router = require('./lib/controllers/router.js');
 
 const client = new Discord.Client();
+let connection;
 
 client.once('ready', () => {
   console.log('ready!');
@@ -11,10 +12,10 @@ client.once('ready', () => {
 
 client.on('message', async (message) => {
   if (message.author.bot) return;
-  const messageParts = message.split(' ');
+  const messageParts = message.content.split(' ');
   const keyword = messageParts[0];
   const args = messageParts.slice(1);
-  return router(keyword, args, message);
+  connection = await router(keyword, args, message, connection);
 });
 
 client.login(token);
