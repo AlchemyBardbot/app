@@ -1,0 +1,209 @@
+VoiceConnection {
+  _events: [Object: null prototype] {
+    closing: [
+      [Function],
+      [Function: bound shutdown],
+      [Function: bound shutdown]
+    ],
+    debug: [Function (anonymous)],
+    failed: [Function: bound onceWrapper] { listener: [Function (anonymous)] },
+    disconnect: [Function: bound onceWrapper] { listener: [Function (anonymous)] }
+  },
+  _eventsCount: 4,
+  _maxListeners: undefined,
+  voiceManager: ClientVoiceManager {
+    connections: Collection(1) [Map] { '898325881565626450' => [Circular *1] },
+    broadcasts: []
+  },
+  channel: VoiceChannel {
+    type: 'voice',
+    deleted: false,
+    id: '898325881565626454',
+    name: 'General',
+    rawPosition: 0,
+    parentID: '898325881565626452',
+    permissionOverwrites: Collection(0) [Map] {},
+    bitrate: 64000,
+    userLimit: 0,
+    guild: Guild {
+      members: [GuildMemberManager],
+      channels: [GuildChannelManager],
+      roles: [RoleManager],
+      presences: [PresenceManager],
+      voiceStates: [VoiceStateManager],
+      deleted: false,
+      available: true,
+      id: '898325881565626450',
+      shardID: 0,
+      name: 'BardBot',
+      icon: null,
+      splash: null,
+      discoverySplash: null,
+      region: 'atlanta',
+      memberCount: 7,
+      large: false,
+      features: [],
+      applicationID: null,
+      afkTimeout: 300,
+      afkChannelID: null,
+      systemChannelID: '898325881565626453',
+      embedEnabled: undefined,
+      premiumTier: 0,
+      premiumSubscriptionCount: 0,
+      verificationLevel: 'NONE',
+      explicitContentFilter: 'DISABLED',
+      mfaLevel: 0,
+      joinedTimestamp: 1634322975648,
+      defaultMessageNotifications: 'ALL',
+      systemChannelFlags: [SystemChannelFlags],
+      maximumMembers: 250000,
+      maximumPresences: null,
+      approximateMemberCount: null,
+      approximatePresenceCount: null,
+      vanityURLCode: null,
+      vanityURLUses: null,
+      description: null,
+      banner: null,
+      rulesChannelID: null,
+      publicUpdatesChannelID: null,
+      preferredLocale: 'en-US',
+      ownerID: '192095844642586624',
+      emojis: [GuildEmojiManager]
+    }
+  },
+  status: 0,
+  speaking: Speaking { bitfield: 1 },
+  authentication: {
+    sessionID: 'becd7bb9cb64346de29a89cf6c19571f',
+    token: '12e927df6ba31ca8',
+    endpoint: 'seattle9056.discord.media',
+    streams: [ [Object] ],
+    ssrc: 2698,
+    port: 50007,
+    modes: [
+      'aead_aes256_gcm_rtpsize',
+      'aead_aes256_gcm',
+      'xsalsa20_poly1305_lite_rtpsize',
+      'xsalsa20_poly1305_lite',
+      'xsalsa20_poly1305_suffix',
+      'xsalsa20_poly1305'
+    ],
+    ip: '213.179.213.44',
+    experiments: [
+      'bwe_conservative_link_estimate',
+      'bwe_remote_locus_client',
+      'fixed_keyframe_interval'
+    ],
+    mode: 'xsalsa20_poly1305_lite',
+    video_codec: 'H264',
+    secret_key: Uint8Array(32) [
+      180, 223, 189, 193, 189, 148, 100,  51,
+      107,  74,  53, 127,  63,  25,  33,  86,
+       80,  47,  82,  54,  22, 210, 245,  24,
+       21,  91, 217,   9,  49, 143, 238, 107
+    ],
+    media_session_id: '8e20a652cd9017c6c8a0934d9d6d2604',
+    audio_codec: 'opus'
+  },
+  player: <ref *2> AudioPlayer {
+    _events: [Object: null prototype] {
+      debug: [Function (anonymous)],
+      error: [Function (anonymous)]
+    },
+    _eventsCount: 2,
+    _maxListeners: undefined,
+    dispatcher: StreamDispatcher {
+      _writableState: [WritableState],
+      _events: [Object: null prototype],
+      _eventsCount: 5,
+      _maxListeners: undefined,
+      player: [Circular *2],
+      streamOptions: [Object],
+      streams: [Object],
+      _nonce: 561,
+      _nonceBuffer: <Buffer 00 00 02 31 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00>,
+      pausedSince: null,
+      _writeCallback: [Function (anonymous)],
+      broadcast: null,
+      _pausedTime: 0,
+      _silentPausedTime: 0,
+      count: 561,
+      startTime: 1634681552650,
+      [Symbol(kCapture)]: false
+    },
+    streamingData: { channels: 2, sequence: 562, timestamp: 539520 },
+    voiceConnection: [Circular *1],
+    [Symbol(kCapture)]: false
+  },
+  ssrcMap: Map(0) {},
+  _speaking: Map(0) {},
+  sockets: {
+    ws: VoiceWebSocket {
+      _events: [Object: null prototype],
+      _eventsCount: 5,
+      _maxListeners: undefined,
+      connection: [Circular *1],
+      attempts: 1,
+      dead: false,
+      ws: [WebSocket],
+      heartbeatInterval: Timeout {
+        _idleTimeout: 13750,
+        _idlePrev: [TimersList],
+        _idleNext: [TimersList],
+        _idleStart: 7848,
+        _onTimeout: [Function: bound sendHeartbeat],
+        _timerArgs: undefined,
+        _repeat: 13750,
+        _destroyed: false,
+        [Symbol(refed)]: true,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 96,
+        [Symbol(triggerId)]: 81
+      },
+      [Symbol(kCapture)]: false
+    },
+    udp: VoiceConnectionUDPClient {
+      _events: [Object: null prototype],
+      _eventsCount: 2,
+      _maxListeners: undefined,
+      voiceConnection: [Circular *1],
+      socket: [Socket],
+      discordAddress: '213.179.213.44',
+      localAddress: '73.11.124.145',
+      localPort: 54709,
+      [Symbol(kCapture)]: false
+    }
+  },
+  receiver: <ref *3> VoiceReceiver {
+    _events: [Object: null prototype] {},
+    _eventsCount: 0,
+    _maxListeners: undefined,
+    connection: [Circular *1],
+    packets: PacketHandler {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      nonce: <Buffer 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00>,
+      receiver: [Circular *3],
+      streams: Map(0) {},
+      speakingTimeouts: Map(0) {},
+      [Symbol(kCapture)]: false
+    },
+    [Symbol(kCapture)]: false
+  },
+  connectTimeout: Timeout {
+    _idleTimeout: -1,
+    _idlePrev: null,
+    _idleNext: null,
+    _idleStart: 7161,
+    _onTimeout: null,
+    _timerArgs: undefined,
+    _repeat: null,
+    _destroyed: true,
+    [Symbol(refed)]: true,
+    [Symbol(kHasPrimitive)]: false,
+    [Symbol(asyncId)]: 74,
+    [Symbol(triggerId)]: 39
+  },
+  [Symbol(kCapture)]: false
+}
