@@ -8,8 +8,8 @@ describe('bardbot routes', () => {
         return setup(pool);
     });
 
-    afterAll(() => {
-        jest.restoreAllMocks;
+    afterEach(() => {
+        jest.clearAllMocks();
     });
 
     jest.spyOn(MusicService, 'play').mockImplementation(() => true);
@@ -37,6 +37,13 @@ describe('bardbot routes', () => {
         await router('!play', ['battle'], message);
         expect(message.channel.send).toHaveBeenCalledWith(
             expect.stringContaining('Now playing')
+        );
+    });
+
+    it('should get all genres and count their tracks', async () => {
+        await router('!genres', [], message);
+        expect(message.channel.send).toHaveBeenCalledWith(
+            expect.stringContaining('travel:')
         );
     });
 });
