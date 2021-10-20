@@ -1,7 +1,13 @@
 const router = require('../lib/controllers/router.js');
 const MusicService = require('../lib/services/MusicService.js');
+const pool = require('../lib/utils/pool');
+const setup = require('../data/setup');
 
 describe('bardbot routes', () => {
+    beforeEach(() => {
+        return setup(pool);
+    });
+
     afterAll(() => {
         jest.restoreAllMocks;
     });
