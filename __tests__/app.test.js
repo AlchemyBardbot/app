@@ -1,4 +1,4 @@
-const router = require('../lib/controllers/router.js');
+
 
 
 
@@ -14,7 +14,7 @@ describe('bardbot routes', () => {
 
 
   beforeEach(() => {
-    jest.clearAllMocks();
+
   }
   );
 
