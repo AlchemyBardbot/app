@@ -7,7 +7,7 @@ const client = new Discord.Client();
 const connections = {};
 
 client.once('ready', () => {
-  console.log('ready!');
+  console.log('Roll for initiative!');
 });
 
 client.on('message', async (message) => {
