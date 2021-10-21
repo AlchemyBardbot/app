@@ -1,5 +1,11 @@
 # Bardbot v1.0
 
+## Commands
+- !play {genre} - plays a random track from the genre
+- !stop - stops current music
+- !genres - return a list of genres and how many songs are in each
+- !roll {number} - rolls a d-whatever you input and returns the outcome
+
 ## DEV TEAM:
 - Alice Retz: https://www.linkedin.com/in/aliceretz/
 - Paul Brubaker: https://www.linkedin.com/in/paul-brubaker-a94597176/
