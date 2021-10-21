@@ -1,4 +1,5 @@
 # Bardbot v1.0
+https://discord.com/api/oauth2/authorize?client_id=898634072493027369&permissions=3155968&scope=bot
 
 ## Commands
 - !play {genre} - plays a random track from the genre
