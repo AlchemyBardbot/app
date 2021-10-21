@@ -1,10 +1,10 @@
 # Bardbot v1.0
 
 ## DEV TEAM:
-- Alice Retz
-- Paul Brubaker
-- Greg Gilliam
-- Dylan Greathouse
+- Alice Retz: https://www.linkedin.com/in/aliceretz/
+- Paul Brubaker: https://www.linkedin.com/in/paul-brubaker-a94597176/
+- Greg Gilliam: https://www.linkedin.com/in/gregory-gilliam/
+- Dylan Greathouse: https://www.linkedin.com/in/dylan-greathouse/
 
 
 # Mission Statement
@@ -23,4 +23,28 @@ Bardbot allows game masters to create an immersive environment within discord ut
 
 
 # Resources
-- Freesound: https://freesound.org/
+- How to Create a Music Bot Using Discord.js, Gabriel Tanner: https://www.freecodecamp.org/news/how-to-create-a-music-bot-using-discord-js-4436f5f3f0f8/
+
+
+# Music Library
+- Tavern Music with Ambience, Green Forge Studio: https://www.youtube.com/watch?v=EIuV7qGXmpk
+- Tavern/Festival Music, Skooma Scamp: https://www.youtube.com/watch?v=tNZXDUZu2To
+- Irish Pub Ambience (with Leprechauns), Odd Ambience: https://www.youtube.com/watch?v=s0dNpS0AAMQ
+- City/Town Square - Day, Matthew Stevens: https://www.youtube.com/watch?v=CBQshTNwP5w
+- Coastal Village, Blue Turtle: https://www.youtube.com/watch?v=iNPzc932cs8
+- Oblivion Music & Ambience - Towns, Everness: https://www.youtube.com/watch?v=xFjpTF4-PgI
+- Battle Combat Music, Kappa: https://www.youtube.com/watch?v=pGw2ztHACxA
+- Ashatan Desert Battle Music, Legends of the Ever Earth: https://www.youtube.com/watch?v=0tfGjnV7g9U
+- Battle in the North Ambient Fantasy Orchestra, Soul Candle: https://www.youtube.com/watch?v=hEQThgfXT30
+- Fanatasy Village, The Vault of Ambience: https://www.youtube.com/watch?v=K1vUA9NltVw
+- Elven Tree City, Michael Ghelfi - RPG Audio: https://www.youtube.com/watch?v=DO26ygk7rcU
+- Wizard's Tower Beautiful Instrumental Fantasy, Soul Candle: https://www.youtube.com/watch?v=TRKoQHRKKis
+- A New Adventure, Blue Turtle: https://www.youtube.com/watch?v=x5l4Cc9TCC8
+- The Plains, Hourglass Ambience: https://www.youtube.com/watch?v=s9UdWnO4W4k
+- Crow Forest, Ravnskjold: https://www.youtube.com/watch?v=JixpQ5o90Jg
+
+
+
+
+
+
