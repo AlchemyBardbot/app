@@ -1,21 +1,25 @@
-require('dotenv').config();
 const Discord = require('discord.js');
-const client = new Discord.Client({
-  intents: [
-    Discord.Intents.FLAGS.GUILD_VOICE_STATES,
-    Discord.Intents.FLAGS.GUILDS,
-    Discord.Intents.FLAGS.GUILD_MESSAGES,
-  ],
+require('dotenv').config();
+const token = process.env.BARDBOT_TOKEN;
+const prefix = process.env.PREFIX;
+const router = require('./lib/controllers/router.js');
+
+const client = new Discord.Client();
+const connections = {};
+
+client.once('ready', () => {
+    console.log('Roll for initiative!');
 });
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}`);
+client.on('message', async (message) => {
+    if (message.author.bot) return;
+    if (!message.content.startsWith(prefix)) return;
+    const messageParts = message.content.split(' ');
+    const keyword = messageParts[0];
+    const args = messageParts.slice(1) || [];
+    const id = message.guild.id;
+    const connection = await router(keyword, args, message, connections[id]);
+    if (keyword === `${prefix}play`) connections[id] = connection;
 });
 
-client.on('message', (msg) => {
-  if (msg.content === '>dungeons') {
-    msg.reply('AND dragons');
-  }
-});
-
-client.login(process.env.BARDBOT_TOKEN);
+client.login(token);
