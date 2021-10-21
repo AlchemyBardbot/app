@@ -27,18 +27,23 @@ Bardbot allows game masters to create an immersive environment within discord ut
 
 
 # Music Library
+## Tavern
 - Tavern Music with Ambience, Green Forge Studio: https://www.youtube.com/watch?v=EIuV7qGXmpk
 - Tavern/Festival Music, Skooma Scamp: https://www.youtube.com/watch?v=tNZXDUZu2To
 - Irish Pub Ambience (with Leprechauns), Odd Ambience: https://www.youtube.com/watch?v=s0dNpS0AAMQ
+## Town
 - City/Town Square - Day, Matthew Stevens: https://www.youtube.com/watch?v=CBQshTNwP5w
 - Coastal Village, Blue Turtle: https://www.youtube.com/watch?v=iNPzc932cs8
 - Oblivion Music & Ambience - Towns, Everness: https://www.youtube.com/watch?v=xFjpTF4-PgI
+## Battle
 - Battle Combat Music, Kappa: https://www.youtube.com/watch?v=pGw2ztHACxA
 - Ashatan Desert Battle Music, Legends of the Ever Earth: https://www.youtube.com/watch?v=0tfGjnV7g9U
 - Battle in the North Ambient Fantasy Orchestra, Soul Candle: https://www.youtube.com/watch?v=hEQThgfXT30
+## Magictown
 - Fanatasy Village, The Vault of Ambience: https://www.youtube.com/watch?v=K1vUA9NltVw
 - Elven Tree City, Michael Ghelfi - RPG Audio: https://www.youtube.com/watch?v=DO26ygk7rcU
 - Wizard's Tower Beautiful Instrumental Fantasy, Soul Candle: https://www.youtube.com/watch?v=TRKoQHRKKis
+## Travel
 - A New Adventure, Blue Turtle: https://www.youtube.com/watch?v=x5l4Cc9TCC8
 - The Plains, Hourglass Ambience: https://www.youtube.com/watch?v=s9UdWnO4W4k
 - Crow Forest, Ravnskjold: https://www.youtube.com/watch?v=JixpQ5o90Jg
