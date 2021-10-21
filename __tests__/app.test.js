@@ -70,7 +70,6 @@ magictown: 3`
 
     it('the roll command should return a random number in range from 1 - x', () => {
         const roll20 = roll(20);
-        console.log('NUMBERS', roll20);
 
         expect(roll20).toBeGreaterThanOrEqual(1);
         expect(roll20).toBeLessThanOrEqual(20);
