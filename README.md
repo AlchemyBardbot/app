@@ -15,7 +15,7 @@ https://discord.com/api/oauth2/authorize?client_id=898634072493027369&permission
 
 
 # Mission Statement
-Bardbot allows game masters to create an immersive environment within discord utilizing music and sound effects with only a few keystrokes. 
+Bardbot allows game masters to create an immersive environment within discord utilizing music with only a few keystrokes. 
 
 
 # Group Agreement
