@@ -13,6 +13,7 @@ client.once('ready', () => {
 
 client.on('message', async (message) => {
     if (message.author.bot) return;
+    if (!message.content.startsWith(prefix)) return;
     const messageParts = message.content.split(' ');
     const keyword = messageParts[0];
     const args = messageParts.slice(1) || [];

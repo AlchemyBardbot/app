@@ -3,6 +3,7 @@ const MusicService = require('../lib/services/MusicService.js');
 const pool = require('../lib/utils/pool');
 const setup = require('../data/setup');
 const jsonToChat = require('../lib/utils/jsonToChat.js');
+const roll = require('../lib/utils/roll.js');
 
 describe('bardbot routes', () => {
     beforeEach(() => {
@@ -64,6 +65,21 @@ battle: 3
 tavern: 3
 travel: 3
 magictown: 3`
+        );
+    });
+
+    it('the roll command should return a random number in range from 1 - x', () => {
+        const roll20 = roll(20);
+        console.log('NUMBERS', roll20);
+
+        expect(roll20).toBeGreaterThanOrEqual(1);
+        expect(roll20).toBeLessThanOrEqual(20);
+    });
+
+    it('Should return "Not a valid Number" if anything else besides an integer is typed after roll command', async() => {
+        await router('!roll', [], message);
+        expect(message.channel.send).toHaveBeenCalledWith(
+            expect.stringContaining('Please provide a number for the roll feature!')
         );
     });
 });
